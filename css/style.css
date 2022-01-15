@@ -226,6 +226,7 @@ button {
     padding-top: 17px;
 }
 /* media quaries */
+/* view for small device */
 @media only screen and (max-width:688px) {
     .e-commerce-sites{
         display: none;
@@ -267,7 +268,7 @@ button {
     .cards{
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
-    }
+    }                               
     .shop-detailes{
         margin-top: 232px;
 
@@ -300,7 +301,70 @@ button {
     .menu-bar{
         flex-direction: column;
         margin: 35px 0 0;
+    }   
+}
+/* view for medium device */
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container-one, .container-two{
+        margin: auto;
     }
+    .menu-bar{
+        margin: 50px 10px 50px 10px;
+    }
+    .main-introduction , .shop-detailes{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    .featured-image{
+        /* width: 202px;
+        height: 190px; */
+        order: 1;
+        margin: auto;
+    }
+    .featured-intoduction{
+        order: 2;
+        padding: 30px;
+    }
+    .product-cards{
+        height: auto;
+    }
+    .product-cards h1{
+    text-align: center;
+    }
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+    .e-commerce-sites{
+        display: none;
+    }
+    .shop-detailes{
+        margin-top: 232px;
 
-    
+    }
+    .detailes{
+        order: 1;
+        margin-left: 0;
+    }
+    .detailes-image{
+        order: 2;
+        text-align: center;
+    }
+    .detailes h1{
+        font-size: 24px;
+        margin: 0;
+    text-align: center;
+    }
+    .detailes p{
+        margin-right: 0px;
+        text-align: center;
+        padding: 0 30px 42px 30px;
+    }
+    .button-join-now{
+    text-align: center;
+    margin: 0 43% 50px 40%;
+    }
+    .right-side-link-button{
+        margin: 0 40% 0 38%;
+        padding-top: 50px;
 }
